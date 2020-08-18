@@ -123,9 +123,9 @@ DefaultContentLanguage = "en"
     copyrightBy = "por geiber"
     copyrightUseCurrentYear = false  # set to true to always display the current year in the copyright
     copyrightYearOverride = "2020"
-    copyrightUrl = "https://github.com/geiber"
+    copyrightUrl = "https://github.com/arturo-ugalde"
     creditsText = "geiber"
-    creditsUrl = "https://github.com/geiber/personal"
+    creditsUrl = "https://github.com/arturo-ugalde/personal"
 
 
 # customize your available languages for your multi-langual site
