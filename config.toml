@@ -116,14 +116,15 @@ DefaultContentLanguage = "en"
     # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
     socialMediaLinks = [
       { link = "https://twitter.com/geiber", icon = "fab fa-twitter" },
-      { link = "https://github.com/arturo-ugalde", icon = "fab fa-github" },
+      { link = "https://www.linkedin.com/in/geiber-ugalde-7a0a4b196", icon = "fab fa-linkedin fa-2x" },
     ]
+	#{ link = "https://github.com/arturo-ugalde", icon = "fab fa-github" },
 
     # credits line configuration
     copyrightBy = "por geiber"
     copyrightUseCurrentYear = false  # set to true to always display the current year in the copyright
     copyrightYearOverride = "2020"
-    copyrightUrl = "https://github.com/arturo-ugalde"
+    copyrightUrl = "https://geiber.dev"
     creditsText = "geiber"
     creditsUrl = "https://github.com/arturo-ugalde/personal"
 
