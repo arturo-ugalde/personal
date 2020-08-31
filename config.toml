@@ -6,7 +6,7 @@ theme = "bilberry-hugo-theme"
 enableRobotsTXT = true
 
 # Change to one of your content languages definded at the end.
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "es"
 
 # Enable / Disable Google Analytics statistics for your site
 #googleAnalytics = ""
@@ -38,7 +38,7 @@ DefaultContentLanguage = "en"
   enable_mathjax    = false
 
   # Enable / Disable algolia search
-  algolia_search    = true
+  algolia_search    = false #true
   algolia_appId     = "45CEN6X6AT"
   algolia_apiKey    = "16030625f1a4d0dd3b8aefd794fd4cf1"
   algolia_indexName = "bilberry-hugo-theme"
@@ -46,7 +46,7 @@ DefaultContentLanguage = "en"
     algolia_currentLanguageOnly = true
 
   # Enable / Disable comments on the articles via commento
-  commentoJsURL = "https://commento.lednerb.de/js/commento.js"
+  commentoJsURL = "" #"https://commento.lednerb.de/js/commento.js"
 
   # Media configuration
     # let hugo automatically resize and crop your images to the correct sizes
@@ -65,7 +65,7 @@ DefaultContentLanguage = "en"
     customImage = "img/Jarra2.jpg"
 
     # define the icon you want to use for the overlay for the customImage or avatar.
-    overlayIcon = "fa-hand-spock"
+    overlayIcon = "fa-beer"
 
     # always display the top navigation (with pages and search) on non-mobile screens
     permanentTopNav = false
@@ -125,19 +125,22 @@ DefaultContentLanguage = "en"
     copyrightUseCurrentYear = false  # set to true to always display the current year in the copyright
     copyrightYearOverride = "2020"
     copyrightUrl = "https://geiber.dev"
-    creditsText = "geiber"
-    creditsUrl = "https://github.com/arturo-ugalde/personal"
+    creditsText = " "
+    creditsUrl = " " #"https://github.com/arturo-ugalde/personal"
 
 
 # customize your available languages for your multi-langual site
 # or delete the [Languages] blog to use the theme with only one supported language
 [Languages]
-  [Languages.en]
+  [Languages.es]
     weight = 1
-  [Languages.de]
-    weight = 2
-    title = "Mein cooler neuer Blog"
-    subtitle = "Hallo Welt! Dies ist der epischste Untertitel aller Zeiten."
+  #[Languages.en]
+  #  weight = 1
+  
+  #[Languages.de]
+  #  weight = 2
+  #  title = "Mein cooler neuer Blog"
+  #  subtitle = "Hallo Welt! Dies ist der epischste Untertitel aller Zeiten."
 
 # don't change anything below
 [taxonomies]
