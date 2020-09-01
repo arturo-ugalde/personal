@@ -2,6 +2,8 @@ title = "La Jarra"
 baseURL = "https://lajarra.net/"
 theme = "bilberry-hugo-theme"
 
+enableInlineShortcodes = true  #habilitado según https://gohugo.io/templates/shortcode-templates/
+
 # Generate the robots.txt file for SEO
 enableRobotsTXT = true
 
@@ -9,7 +11,7 @@ enableRobotsTXT = true
 DefaultContentLanguage = "es"
 
 # Enable / Disable Google Analytics statistics for your site
-#googleAnalytics = ""
+googleAnalytics = "UA-176713166-1"
 
 # Enable / Disable comments on the articles via Disqus.
 #disqusShortname = ""

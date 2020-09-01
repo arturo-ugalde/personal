@@ -8,7 +8,6 @@ author: "Geiber"
 #noSummary: true
 
 resizeImages: false
-
 ---
 
 En este *post* encontras mi experiencia para obtener la certificación PSM I de [Scrum](https://www.scrum.org/professional-scrum-master-i-certification) ;-)
@@ -47,7 +46,4 @@ El curso abarca el detalle del [`Scrum Guide`](https://www.scrumguides.org/scrum
 
 Luego de aprovechar cada uno de los puntos anteriores es sensato entonces lanzarse a hacer el examen de certificación que te permitirá obtener:  
 {{< figure src="psmi.png" width="36%">}} y mostrarlo en tu [**Perfil personal de Scrum.org**](https://www.scrum.org/user/708208) o [**LinkedIn**](https://www.linkedin.com/in/geiber-ugalde-7a0a4b196).
-
-
-<script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
 
