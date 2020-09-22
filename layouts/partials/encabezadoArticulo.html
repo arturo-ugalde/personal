@@ -1,0 +1,19 @@
+
+<table><tr>
+<td>
+{{ $dateTime := .PublishDate.Format "2006-01-02" }}
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
+<i style="color:#2e6da4" data-feather="calendar"></i>
+<span class="date moment">{{ .PublishDate.Format "2006-01-02" }}</span>
+</td>
+<td style="padding-left: 25px">
+{{ with .Params.tags }}
+<i style="color:#2e6da4" data-feather="tag"></i>
+{{ range $i, $e := . }}
+	{{ if $i }} / {{ end }}
+	{{ $href := print (absURL "tags/") (urlize $e) }}
+	<a  href="{{ $href }}">{{ $e }}</a>  	  
+{{ end }}
+{{ end }}
+</td>
+</table></tr>

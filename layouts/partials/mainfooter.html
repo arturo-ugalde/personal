@@ -1,0 +1,69 @@
+<footer >
+    <div class="container2" >
+
+        {{ if gt (.Site.Params.postsInFooter | default 5) 0 }}
+        <div class="recent-posts">
+            <strong>{{ i18n "latestPosts" }}</strong>
+            <ul>
+                {{ $dontRender :=  (slice "page" "quote" "link" "status") }}
+                {{ range (first (.Site.Params.postsInFooter | default 5) (where (where .Site.Pages.ByPublishDate.Reverse ".Kind" "page") ".Type" "not in" $dontRender )) }}
+                    <li>
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+		
+        {{ if and .Site.Taxonomies.categories (gt ( .Site.Params.amountCategoriesInFooter | default 7 ) 0 ) }}
+        <div class="categories">
+            <a href="{{ "/categories/" | relLangURL }}"><strong>{{ i18n "categories" }}</strong></a>
+            <ul>
+                {{ range $order, $taxonomy := (first ( .Site.Params.amountCategoriesInFooter | default 7 ) .Site.Taxonomies.categories.ByCount) }}
+                <li>
+                    <a href="{{ (print "/categories/" ($taxonomy.Name | urlize)) | relLangURL }}">{{ $taxonomy.Name | humanize }}
+                        ({{ $taxonomy.Count }})</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+        {{ end }}
+		
+        <div class="right">
+            <div class="external-profiles">
+                <strong>{{ i18n "socialMedia" }}</strong>
+				<ul><li>
+                {{ range .Site.Params.socialMediaLinks }}
+                <a href="{{ .link }}" target="_blank"><i class="{{ .icon }}"></i></a>
+                {{ end }}
+				</li></ul>
+            </div>
+        </div>		
+
+    </div>
+</footer>
+
+
+<div class="creditos">
+    <div class="container3">
+        <div class="copyright2">
+		<ul><li>
+            <a href="{{ .Site.Params.copyrightUrl | default "https://github.com/Lednerb" }}" target="_blank">
+                &copy;
+                {{ if .Site.Params.copyrightUseCurrentYear }}
+                {{ now.Year }}
+                {{ else }}
+                {{ .Site.Params.copyrightYearOverride | default 2018 }}
+                {{ end }}
+                {{ .Site.Params.copyrightBy | default "by Lednerb" }}
+            </a>
+            {{ with  .OutputFormats.Get "rss" -}}
+            -
+            <a href="{{ .Permalink }}">{{ .Name }}</a>
+            {{- end }}
+		</li></ul>
+        </div>
+	
+    </div>
+</div>
+	

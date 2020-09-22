@@ -2,7 +2,7 @@
 title: "DAX Editor más DAX Studio"
 date: 2015-03-01T18:10:01+01:00
 
-tags: ['DAX']
+tags: ['DAX', 'tag2']
 categories: ['DATOS']
 author: "Geiber"
 #noSummary: true

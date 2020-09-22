@@ -1,0 +1,50 @@
+
+<header>
+
+	<div class="container">
+		<ul class="encabezado">
+		<li>
+		
+			{{ $title := print .Site.Title " | " .Title }}
+			{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+			<title>{{ $title }}</title>
+
+			<div class="imgheader-responsive">
+				<a href="{{ .Site.BaseURL | relLangURL }}" class="">
+					{{ if and (isset .Site.Params "logoimg") (ne .Site.Params.logoImg "") }}
+						<img src="{{ .Site.Params.logoImg | relURL }}" alt="" class="imgheader-responsive">
+					{{ end }}
+
+				</a>	
+			</div>			
+		</li>
+		<li>
+		
+			<div class="titles">
+                <h1 class="title">
+                    <a href="{{ .Site.BaseURL | relLangURL }}">
+                        {{ .Site.Title | default "My cool new blog" }}
+                    </a>
+                </h1>				
+                <span class="subtitle">compartiendo ideas...</span>
+				
+            </div>
+		
+		</li>
+		</ul>	
+	</div>	
+	
+
+</header>
+
+	
+
+				
+				
+
+
+
+
+
+
+	

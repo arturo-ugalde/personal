@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+	{{if .IsHome}}
+			{{ range .Pages }}
+			{{ range .Pages.ByPublishDate.Reverse }}	
+				{{ partial "element.html" . }}
+			{{end}}	
+			{{end}}
+	{{else}}		
+		{{ range .Pages.ByPublishDate.Reverse }}
+			{{ partial "element.html" . }}
+		{{end}}	
+	{{end}}	
+	
+{{end}}	

@@ -1,0 +1,31 @@
+	<li  class="timeline-inverted">
+	<div class="timeline-badge"><i class="fas fa-envelope-open-text"  id=""></i></div>
+	<div class="timeline-panel">	
+		{{ partial "imagenbase.html" . }}	
+	
+	    <div class="timeline-heading">                
+			<h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>	
+			{{$var1 := .Params.Otro}}
+			
+			{{if eq $var1 "status"}}
+				True  
+			{{else}}		
+				{{ partial "encabezadoArticulo.html" . }}
+			{{end}}			
+        </div>
+	
+		<div class="timeline-body">
+			{{ .Summary }}	
+
+		</div>
+		
+		<div class="timeline-footer">
+				<a>
+					<a href="{{ .RelPermalink }}" class="summary">{{ i18n "continueReading" }}</a>
+				</a>
+		{{ partial "footerItem.html" . }}				
+		</div>			
+		
+
+	</div>
+	</li>

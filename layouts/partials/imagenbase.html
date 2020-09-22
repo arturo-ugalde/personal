@@ -1,0 +1,17 @@
+{{ if .Resources.GetMatch "imagenbase.*" }}
+    <div class="imagenbase">
+        <a href="{{ .Permalink }}">
+            {{ if and (.Site.Params.resizeImages | default true) (.Params.resizeImages | default true) }}
+                <img src="{{ ((.Resources.GetMatch "imagenbase.*").Fill "700x350 q95").RelPermalink }}" alt="">
+            {{ else }}
+                <img src="{{ (.Resources.GetMatch "imagenbase.*").RelPermalink }}" alt="">
+            {{ end }}
+        </a>
+    </div>
+{{ else if and (isset .Params "imagenbase") (ne .Params.imagenbase "") }}
+    <div class="imagenbase">
+        <a href="{{ .Permalink }}">
+            <img src="{{ .Params.imagenbase | relURL }}" alt="">
+        </a>
+    </div>
+{{ end }}
