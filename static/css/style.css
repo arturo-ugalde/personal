@@ -5,7 +5,7 @@ background-color: #f1f1f1;
 
 footer{border-top:3px solid #eee;border-bottom:3px solid #eee;background-color:#fff;}
 
-footer .container {padding-top: 5%; padding-bottom:3%;display:flex;justify-content:space-between; padding-left:8%; padding-right:7%;}
+footer .container {padding-top: 5%; padding-bottom:3%;display:flex;justify-content:space-between; padding-left:7%; padding-right:6%;}
 footer .container strong{text-transform:uppercase;color:#555;padding-left:2.5em; }
 footer .container ul{list-style:none; }
 footer .container ul li{padding-right:20px; text-align:left; display:inline-block;}
@@ -15,6 +15,7 @@ footer .container ul a:hover{left:10px;color:#2e6da4}
 
 footer .container .external-profiles strong {display:flex;justify-content:flex-start;}
 footer .container .external-profiles ul li a{text-align:left;font-size:2em;color:#2e6da4; display:inline-block;}
+footer .container .external-profiles ul a{position:relative;left:0;transition:left;}
 
 
 
@@ -529,6 +530,7 @@ text-decoration: none;
 		footer .container ul a:hover{left:10px;color:#2e6da4}
 
 		footer .container .external-profiles ul li a{font-size:2em;color:#2e6da4;}
+		footer .container .external-profiles ul a{position:relative;left:0;transition:left; padding-right: 10px;}
 		
 		
 		
