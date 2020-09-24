@@ -3,7 +3,22 @@ body {
 background-color: #f1f1f1;	
 }
 
-footer{border-top:3px solid #eee;border-bottom:3px solid #eee;background-color:#fff}
+footer{border-top:3px solid #eee;border-bottom:3px solid #eee;background-color:#fff;}
+
+footer .container {padding-top: 5%; padding-bottom:3%;display:flex;justify-content:space-between; padding-left:8%; padding-right:7%;}
+footer .container strong{text-transform:uppercase;color:#555;padding-left:2.5em; }
+footer .container ul{list-style:none; }
+footer .container ul li{padding-right:20px; text-align:left; display:inline-block;}
+footer .container ul a{position:relative;left:0;transition:left .3s ease-in-out;}
+footer .container ul a:hover{left:10px;color:#2e6da4}
+
+
+footer .container .external-profiles strong {display:flex;justify-content:flex-start;}
+footer .container .external-profiles ul li a{text-align:left;font-size:2em;color:#2e6da4; display:inline-block;}
+
+
+
+
 footer .container2{padding:4rem 0;padding-left:20%;padding-right:20%;display:flex;justify-content:space-between;font-size:.9em}
 
 footer .container2 strong{text-transform:uppercase;color:#555;padding-left:2.75em;padding-bottom:.75em}
@@ -505,6 +520,18 @@ text-decoration: none;
 
 
 		footer{border-top:3px solid #eee;border-bottom:3px solid #eee;background-color:#fff;}
+
+		footer .container {padding-top: 5%; padding-bottom:5%;display:block;padding-left:0px; padding-right:0px;}
+		footer .container strong{text-transform:uppercase;color:#555;padding-left:2.5em; }
+		footer .container ul{list-style:none; }
+		footer .container ul li{padding-right:20px; text-align:left}
+		footer .container ul a{position:relative;left:0;display:inline-block;transition:left .3s ease-in-out;}
+		footer .container ul a:hover{left:10px;color:#2e6da4}
+
+		footer .container .external-profiles ul li a{font-size:2em;color:#2e6da4;}
+		
+		
+		
 		footer .container2{padding:10px; padding-top: 30px;display:auto;justify-content:space-between;font-size:.8rem}
 
 		footer .container2 strong{text-transform:uppercase;color:#555;padding-left:2.75em;padding-bottom:.75em; font-size: 0.9em;}

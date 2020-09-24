@@ -1,5 +1,5 @@
 	<li  class="timeline-inverted">
-	<div class="timeline-badge"><i class="fas fa-envelope-open-text"  id=""></i></div>
+	<div class="timeline-badge"><i class="fas fa-bolt"  id=""></i></div>
 	<div class="timeline-panel">	
 		{{ partial "imagenbase.html" . }}	
 	
@@ -16,13 +16,13 @@
 	
 		<div class="timeline-body">
 			{{ .Summary }}	
-
+				<hr>
+				<a href="{{ .RelPermalink }}" class="summary">{{ i18n "continueReading" }}</a>
+				
 		</div>
 		
 		<div class="timeline-footer">
-				<a>
-					<a href="{{ .RelPermalink }}" class="summary">{{ i18n "continueReading" }}</a>
-				</a>
+
 		{{ partial "footerItem.html" . }}				
 		</div>			
 		

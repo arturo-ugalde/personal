@@ -1,8 +1,10 @@
 <footer >
-    <div class="container2" >
 
+	<div class="container">
+
+		
         {{ if gt (.Site.Params.postsInFooter | default 5) 0 }}
-        <div class="recent-posts">
+        
             <strong>{{ i18n "latestPosts" }}</strong>
             <ul>
                 {{ $dontRender :=  (slice "page" "quote" "link" "status") }}
@@ -12,11 +14,12 @@
                     </li>
                 {{ end }}
             </ul>
-        </div>
+        
         {{ end }}
 		
+		
         {{ if and .Site.Taxonomies.categories (gt ( .Site.Params.amountCategoriesInFooter | default 7 ) 0 ) }}
-        <div class="categories">
+        
             <a href="{{ "/categories/" | relLangURL }}"><strong>{{ i18n "categories" }}</strong></a>
             <ul>
                 {{ range $order, $taxonomy := (first ( .Site.Params.amountCategoriesInFooter | default 7 ) .Site.Taxonomies.categories.ByCount) }}
@@ -26,10 +29,10 @@
                 </li>
                 {{ end }}
             </ul>
-        </div>
-        {{ end }}
+       
+        {{ end }}		
 		
-        <div class="right">
+		<div>        
             <div class="external-profiles">
                 <strong>{{ i18n "socialMedia" }}</strong>
 				<ul><li>
@@ -38,9 +41,13 @@
                 {{ end }}
 				</li></ul>
             </div>
-        </div>		
+		<div>
+       
 
-    </div>
+	</div>
+
+		
+
 </footer>
 
 
