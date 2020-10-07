@@ -41,7 +41,7 @@ float:right;
 .creditos .container3 ul{list-style:none;margin-top:1.25em}
 
 
-header{background-color:#243B48}
+header{background-color:#1F567D}
 
 .encabezado {
 list-style: none;
@@ -151,7 +151,7 @@ bottom: 0;
 position: absolute;
 content: " ";
 width: 4px;
-background-color: #243B48;
+background-color: #1F567D;
 left: 18%;
 margin-left: -1.5px;
 }
