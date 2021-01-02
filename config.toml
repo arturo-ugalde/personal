@@ -43,7 +43,7 @@ DefaultContentLanguage = "es"
     copyrightUseCurrentYear = false 
     copyrightYearOverride = "2020"
     copyrightUrl = "https://geiber.dev"
-
+	googleAnalytics = "UA-176713166-1"
 
 	logoImg = "img/Jarra6.png"
 
